@@ -1,0 +1,25 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import './utils/variables';
+@import './utils/mixins.scss';
+@import './base/base.scss';
+@import "../../node_modules/bootstrap";
+
+//引用自訂元件
+@import "../scss/components/accordion";
+@import "../scss/components/_border_dash.scss";
+@import "../scss/components/buttons";
+@import "../scss/components/dialog";
+@import "../scss/components/form";
+@import "../scss/components/badge_sm";
+@import "../scss/components/navbar";
+
+//放在引入bootstrap的後面，先引入客製化的，再引入utilities/api
+@import "./utils/utils";
+@import "bootstrap/scss/utilities/api";
+//
+
+@import './layout/header.scss';
+@import './layout/footer.scss';
+
+@import './pages/index.scss';
+@import './pages/contact';

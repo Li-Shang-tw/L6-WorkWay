@@ -1,0 +1,39 @@
+.dialog {
+  padding: 12px 18px;
+  border: 2px solid $primary;
+  border-radius: 12px;
+  position: relative;
+  background-color: white;
+  @include tablet-down {
+    padding: 13px 22px;
+  }
+  .dialog_title {
+    color: $primary;
+    font-size: 20px;
+    @include tablet-down {
+      font-size: 18px;
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -11px; /* 大箭頭的一半 */
+    border-width: 11px;
+    border-style: solid;
+    border-color: $primary transparent transparent transparent;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(100% - 1px); /* 往上 1px 蓋住外框線的內側 */
+    left: 50%;
+    margin-left: -10px; /* 小箭頭的一半 */
+    border-width: 10px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    z-index: 1;
+  }
+}

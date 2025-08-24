@@ -1,0 +1,142 @@
+.background_layer {
+  background-image: url("/assets/images/index/gradient-ball.png");
+  background-position: top;
+  background-size: cover;
+}
+
+.banner_display {
+  @include tablet-down {
+    font-size: 32px;
+  }
+}
+
+.logo_title {
+  margin-left: 5.5px;
+}
+
+.image_card {
+  position: relative;
+  .image_card_text {
+    position: absolute;
+    bottom: 0;
+    border-top-right-radius: 12px;
+  }
+}
+
+.why_us_block {
+  position: relative;
+  .float_img {
+    position: absolute;
+    right: 0;
+  }
+}
+
+.meet_partner_section {
+  overflow: hidden;
+  position: relative;
+  .backgroud_ball {
+    width: 800px;
+    position: absolute;
+    bottom: -300px;
+    right: -200px;
+    z-index: -1;
+    @include tablet-down {
+      bottom: -150px;
+      right: -150px;
+    }
+  }
+}
+
+.service_card {
+  position: relative;
+  .card-image {
+    width: 160px;
+  }
+
+  .card_tab {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10.5px 16px;
+    border-bottom-right-radius: 12px;
+    border-top-left-radius: 12px;
+  }
+}
+
+.qa_section {
+  background-image: url("/assets/images/index/bg-grid.png");
+}
+
+.answer_A {
+  margin-top: -5px;
+}
+
+.logo_bottom {
+  width: 40px;
+}
+
+.story_card {
+  position: relative;
+  width: 400px;
+  .story_card_badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+  }
+}
+
+/*banner*/
+.banner {
+  background-image: url("/assets/images/index/gradient-ball.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  padding-top: 50px;
+  padding-bottom: 200px;
+  margin-bottom: -200px;
+}
+
+.testimonials_section {
+  margin-bottom: -160px;
+  @include tablet-down {
+    margin-bottom: -96px;
+  }
+}
+//--選擇職旅 WorkWay-
+
+.why_us_section {
+  padding-top: 240px;
+  @include tablet-down {
+    padding-top: 154px;
+  }
+}
+.image_card {
+  position: relative;
+  z-index: 0;
+  .image_card_text {
+    z-index: 2;
+  }
+  .img_overylay {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    border-radius: 1.5rem;
+    z-index: 1;
+    opacity: 0;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.nav_modal {
+  height: 100vh;
+}

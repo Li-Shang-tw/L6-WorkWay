@@ -1,0 +1,9 @@
+.form-floating {
+  label {
+    font-size: 16px;
+    color: $black;
+    @include tablet-down {
+      font-size: 164x;
+    }
+  }
+}

@@ -1,0 +1,93 @@
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <div class="d-flex align-items-center w-100 justify-content-between">
+      <a class="navbar-brand d-flex align-items-center order-1" href="#">
+        <img
+          src="../assets/images/logo-icon.svg"
+          alt="logo"
+          class="brand_logo"
+        />
+        <h1 class="logo_title">職旅<br />WorkWay</h1>
+      </a>
+      <button
+        class="navbar-toggler order-4"
+        type="button"
+        data-bs-toggle="modal"
+        data-bs-target="#navModal"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <ul class="navbar-nav order-2 d-lg-flex d-none">
+        <li class="nav-item">
+          <a class="nav-link fs-lg-7 fs-8" aria-current="page" href="#"
+            >服務方案</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-lg-7 fs-8" href="#">關於職旅</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-lg-7 fs-8" href="../pages/contact.html"
+            >聯絡我們</a
+          >
+        </li>
+      </ul>
+
+      <div
+        class="badge order-3 text-black border border-natural-85 fw-normal py-2 px-lg-6 px-4 fs-lg-7 fs-8"
+      >
+        登入/註冊
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="navModal"
+  tabindex="-1"
+  aria-labelledby="navModal"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content nav_modal">
+      <div class="modal-header">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <ul class="navbar-nav">
+          <li class="nav-item py-4">
+            <a class="nav-link 7 fs-8 text-center" aria-current="page" href="#"
+              >服務方案</a
+            >
+          </li>
+          <li class="nav-item py-4">
+            <a class="nav-link fs-8 text-center" href="#">關於職旅</a>
+          </li>
+          <li class="nav-item py-4">
+            <a class="nav-link fs-8 text-center" href="../pages/contact.html"
+              >聯絡我們</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary w-100 justify-content-center"
+        >
+          登入/註冊
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

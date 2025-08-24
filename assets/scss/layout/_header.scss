@@ -1,0 +1,13 @@
+.brand_logo {
+  width: 60px;
+  @include tablet-down {
+    width: 40px;
+  }
+}
+
+.logo_title {
+  font-size: 28px;
+  @include tablet-down {
+    font-size: 21px;
+  }
+}
